@@ -10,8 +10,8 @@
 	<summary>QtPass is a GUI for pass, the standard unix password manager. </summary>
     <description>QtPass is a GUI for pass, the standard unix password manager. 
     </description>
-    <projectUrl>https://github.com/IJHack/qtpass</projectUrl>
-    <packageSourceUrl>https://github.com/IJHack/qtpass/releases/download/v1.0.6/qtpass-1.0.6.exe</packageSourceUrl>
+    <projectUrl>https://qtpass.org/</projectUrl>
+    <packageSourceUrl>https://github.com/Fab-IT-ApS/chocolatey-qtpass.git</packageSourceUrl>
     <!--<projectSourceUrl>https://github.com/IJHack/qtpass</projectSourceUrl>
     <docsUrl>https://qtpass.org/</docsUrl>
     <bugTrackerUrl>https://github.com/IJHack/qtpass/issues</bugTrackerUrl>-->
@@ -20,7 +20,6 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <!--<dependencies>
     </dependencies>-->
-	<packageSourceUrl>https://github.com/Fab-IT-ApS/chocolatey-qtpass.git</packageSourceUrl>
     <releaseNotes>
 	1.0.6:
     Updated german translation #125 #126 #134
