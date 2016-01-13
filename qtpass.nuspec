@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>qtpass</id>
+    <title>QtPass</title>
+    <version>1.0.6</version>
+    <authors>Anne Jan Brouwer, realitygaps</authors>
+	<summary>QtPass is a GUI for pass, the standard unix password manager. </summary>
+    <description>QtPass is a GUI for pass, the standard unix password manager. 
+    </description>
+    <projectUrl>https://github.com/IJHack/qtpass</projectUrl>
+    <packageSourceUrl>https://github.com/IJHack/qtpass/releases/download/v1.0.6/qtpass-1.0.6.exe</packageSourceUrl>
+    <!--<projectSourceUrl>https://github.com/IJHack/qtpass</projectSourceUrl>
+    <docsUrl>https://qtpass.org/</docsUrl>
+    <bugTrackerUrl>https://github.com/IJHack/qtpass/issues</bugTrackerUrl>-->
+    <tags>admin qtpass pass password</tags>
+    <licenseUrl>http://www.gnu.org/licenses/gpl-3.0.en.html</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <!--<dependencies>
+    </dependencies>-->
+	<packageSourceUrl>https://github.com/Fab-IT-ApS/chocolatey-qtpass.git</packageSourceUrl>
+    <releaseNotes>
+	1.0.6:
+    Updated german translation #125 #126 #134
+    Fixed qrand always generating the same sequence of passwords #129
+    Fixed deleted record can be retrieved bug #117
+    On-demand copy to clipboard feature #119
+    Always on top feature #118
+    Fixed timer issue #122 (introduced in #119)
+	
+	1.0.5:
+	Auto hiding of content doesn't need clipboard 76dacca
+    Auto content hiding timer gets stopped when starting new task 1fa596d a8fa7b2
+    Remove template widgets when starting new task 4e7ac13
+    Using pwgen won't add a carriage return to password anymore #115
+    Output of git commands won't (always) show in red anymore #111
+    Tab order of templated fields is correctly set 2f9c6f7
+    SingleApplication communication problem workaround 3fc1dc7
+    Translation building system updated and further removal of duplicate and unneeded bits
+    Use example template format from passff as default 107dbff 5ec97c7
+    CI building windows installer https://ci.appveyor.com/project/annejan/qtpass/build/artifacts
+	
+	1.0.4:
+	Support for RightToLeft languages #108
+    FreeBSD fixes 2ed0093 7c26329
+    Windows "hidden" folder fix #63
+    Minor cleanup work 4302cc0 f6d68f4 8b6a533
+    Some work on the language creation/update mechanics 741c4b7 and other minor tweaks.
+	Currently the new languages are just stubs. Localisations will need a lot of love in the coming months.
+	
+	Language 	Percentage Done
+	nl_NL 	100
+	de_DE 	92
+	zh_CN 	90
+	es_ES 	88
+	ru_RU 	25
+	hu_HU 	19
+	gl_ES 	18
+	sv_SE 	10
+	ar_MA 	1
+	he_IL 	1
+	pl_PL 	0
+
+	Live version: https://calc.ijhack.nl/qtpass
+
+	Ps. Experimental Windows build Qt5.5 on WinXP (to test build automation)
+	
+	1.0.3:
+	Spanish translations added #103
+    Use pass show password instead of unsafe fallback pass password #105
+    Get PREFIX variable from qmake or env #106
+    Templating skips parsing colon in urls unless specifically added prefix to template.
+
+	1.0.2:
+	    Fixed modulus zero exception in password generation #102
+    Installation prefix selection #100
+    Made IP urls clickable by simplifying regex #97
+    Added trailing newline if missing #93
+
+Experimental OS X release created on 10.11 El Capitan with Xcode 7
+
+
+</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
